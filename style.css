@@ -740,6 +740,12 @@ footer {
     display: inline-flex;     /* sit side-by-side */
     vertical-align: middle;
   }
+  
+ .bg-video {
+        object-fit: contain; /* Prevents excessive cropping on small screens */
+        background-color: #000; /* Fallback for letterboxing */
+    }
+
 
   .testimonial-slider {
     text-align: center;
