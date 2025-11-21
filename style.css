@@ -332,8 +332,8 @@ margin-bottom: 30px;
 }
 
 .testimonial img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -370,7 +370,12 @@ margin-bottom: 30px;
   top: 50%;
   transform: translateY(-50%);
   transition: .3s;
+  z-index: 10
 }
+
+.prev { left: -25px; }  /* Move further outside */
+.next { right: -25px; } /* Move further outside */
+
 
 .prev:hover, .next:hover {
   background: #413eec;
@@ -625,7 +630,7 @@ margin-bottom: 30px;
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .cta {
         flex-direction: column;
         text-align: center;
@@ -651,7 +656,7 @@ footer {
 
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .navbar {
     display: flex;
     justify-content: space-between;
@@ -680,4 +685,58 @@ footer {
         cursor: pointer;
     font-size: 24px;
     }
+
 }}
+
+
+@media (max-width: 500px) {
+  .popup-content, .business-popup-content {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+  }
+
+  .footer-links ul, .footer-contact ul {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .prev, .next {
+    position: static;         /* no absolute positioning */
+    transform: none;
+    margin: 12px 8px 0;       /* space above */
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    display: inline-flex;     /* sit side-by-side */
+    vertical-align: middle;
+  }
+
+  .testimonial-slider {
+    text-align: center;
+  }
+}
+
