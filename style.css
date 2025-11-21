@@ -201,6 +201,12 @@ font-family: "roboto", sans-serif;
     cursor: pointer;
     border-radius: 4px;
     width: 100%;
+    transition: background .3s;
+}
+
+
+.business-submit-btn:hover {
+    background: #004cdf;
 }
 
 .business-success {
