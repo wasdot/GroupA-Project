@@ -69,3 +69,38 @@ setInterval(() => {
         popup.style.opacity = "0";
         setTimeout(() => popup.style.display = "none", 350);
 }
+// ===== BUSINESS GOALS POPUP =====
+const openBusinessPopup = document.getElementById('openFormBtn'); // Hero button
+const businessPopup = document.getElementById('businessPopup');
+const closeBusinessPopup = document.getElementById('closeBusinessPopup');
+const businessForm = document.getElementById('businessForm');
+const businessSuccess = document.getElementById('businessSuccess');
+
+openBusinessPopup.addEventListener('click', () => {
+    businessPopup.style.display = 'flex';
+    setTimeout(() => businessPopup.style.opacity = '1', 10);
+});
+
+closeBusinessPopup.addEventListener('click', () => closeBusiness());
+
+window.addEventListener('click', (e) => {
+    if (e.target === businessPopup) closeBusiness();
+});
+
+function closeBusiness() {
+    businessPopup.style.opacity = '0';
+    setTimeout(() => businessPopup.style.display = 'none', 350);
+}
+
+// Form submission with success message
+businessForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (businessForm.checkValidity()) {
+        businessSuccess.style.display = 'block';
+        businessForm.reset();
+        setTimeout(() => {
+            closeBusiness();
+            businessSuccess.style.display = 'none';
+        }, 2000);
+    }
+});
