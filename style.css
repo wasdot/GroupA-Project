@@ -652,10 +652,32 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+   .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+   .nav-menu li {
+    padding: 10px;
+    text-align: center;
+  }
     .nav-links {
         display: none;
     }
     .hamburger {
         display: block;
+        cursor: pointer;
+    font-size: 24px;
     }
-}
+}}
