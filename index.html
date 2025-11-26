@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/09c195f883.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <Header>
+        <div class="navbar">
+            <div class="logo"> DigitalSphere</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </Header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop class="bg-video">
+            <source src="./asset/Videos/Business Meeting Presentation 2 3840X2160.mp4" type="video/mp4">
+
+        </video>
+        <div class="hero-content">
+            <h1>Ready to Grow Your Business</h1>
+            <p>Partner with a results-driven digital marketing agency dedicated to accelerating measurable growth.</p>
+            <button id="openFormBtn" class="cta-btnn">Get Started</button>
+        </div>
+        <div id="businessPopup" class="business-popup">
+            <div class="business-popup-content">
+                <span id="closeBusinessPopup" class="business-close-btn">&times;</span>
+                <h3>Tell Us About Your Business</h3>
+                <form id="businessForm">
+                    <label for="goals">Business Goals:</label>
+                    <textarea id="goals" name="goals" required></textarea>
+
+                    <label for="budget">Budget:</label>
+                    <input type="text" id="budget" name="budget" required>
+
+                    <label for="services">Services Needed:</label>
+                    <input type="text" id="services" name="services" required>
+
+                    <button type="submit" class="business-submit-btn">Submit</button>
+                </form>
+                <p id="businessSuccess" class="business-success" style="display:none;">Thank you! We'll contact you
+                    soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card"><i class="fas fa-search"></i>
+                <h3>SEO Optimization</h3>
+                <p>Boost your visibility and rankings.</p>
+            </div>
+            <div class="card"><i class="fas fa-bullhorn"></i>
+                <h3>PPC Advertising</h3>
+                <p>Drive targeted traffic with ads.</p>
+            </div>
+            <div class="card"><i class="fas fa-users"></i>
+                <h3>Customer Marketing</h3>
+                <p>Engage and retain customers.</p>
+            </div>
+            <div class="card"><i class="fas fa-chart-line"></i>
+                <h3>Social Media</h3>
+                <p>Grow your brand presence online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work -->
+    <section class="our-work">
+        <h2>Our Work</h2>
+        <div class="work-grid">
+            <div class="work-item"> <img src="./asset/Images/Ecommerce Growth 3.avif">
+                <div class="overlay">E-commerce Growth</div>
+            </div>
+            <div class="work-item"><img src="./asset/Images/SEO2.webp">
+                <div class="overlay">Lead Generation</div>
+            </div>
+            <div class="work-item"><img src="./asset/Images/Growth.jpg">
+                <div class="overlay">Brand Awareness & Management</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+
+    <section class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial active">
+                <img src="./asset/Images/what client say 6.jpg" alt="">
+                <p>“The agency completely transformed our online presence. Our traffic, our brand, and sales have all
+                    exploded!”</p>
+                <h4>Sarah Johnson</h4>
+                <span>CEO of Inspire Inc.</span>
+            </div>
+
+            <div class="testimonial">
+                <img src="./asset/Images/what client says 4.avif" alt="">
+                <p>“Their data-driven approach and creativity delivered results beyond our expectations. Highly
+                    recommended!”</p>
+                <h4>Mark Chen</h4>
+                <span>Marketing Director, Bright Tech</span>
+            </div>
+
+            <div class="testimonial">
+                <img src="./asset/Images/what client says 5.webp" alt="">
+                <p>“Working with them was a game-changer. I saw a drastic improvement in brand visibility.”</p>
+                <h4>Emily Rodriguez</h4>
+                <span>Founder, Vision Co.</span>
+            </div>
+
+            <!-- Arrow Buttons -->
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Amplify Your Brand?</h2>
+            <p>Let's build your success story together. Contact us for a free, no-obligation consultation.</p>
+        </div>
+        <button id="openPopup" class="cta-btn">Subscribe</button>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+
+    <!-- ===== POPUP FORM ===== -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close-btn">&times;</span>
+            <h3>Subscribe</h3>
+            <p>Enter your contact details to get updates.</p>
+
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Message (optional)"></textarea>
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+<!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <h3 class="logo">DigitalSphere</h3>
+      <p>Driving growth through data-driven digital marketing strategies.</p>
+    
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="contactUs.html">Services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li>📧 contact@agencyflow.com</li>
+        <li>📞 (555) 123-4567</li>
+        <li>📍 123 Market St, San Francisco</li>
+      </ul>
+    </div>
+  </div>
+
+  
+</footer>
+<div class="footer-bottom">
+    <p>&copy; 2025 DigitalSphere. All Rights Reserved.</p>
+  </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
