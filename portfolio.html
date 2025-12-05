@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DigitalGrowth Co. — Case Studies</title>
+
+  <!-- Link to stylesheet -->
+ <link rel="stylesheet" href="./pstyle.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09c195f883.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+ 
+ <!-- Header -->
+    <Header>
+        <div class="navbar">
+            <div class="logo"> DigitalSphere</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </Header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>We Drive Results. See How We've Helped Businesses Succeed.</h1>
+        <p class="lead">Explore our portfolio of successful digital marketing campaigns and discover the tangible impact we deliver for our clients.</p>
+        <div class="hero-actions">
+          <button class="btn-primary open-modal-btn">Get a Free Consultation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER TABS -->
+    <section class="filters container" aria-label="Filter case studies">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="seo">SEO</button>
+      <button class="filter-btn" data-filter="ppc">PPC</button>
+      <button class="filter-btn" data-filter="social">Social Media</button>
+      <button class="filter-btn" data-filter="ecom">E-commerce</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+      <button class="filter-btn" data-filter="health">Healthcare</button>
+    </section>
+
+    <!-- CARDS GRID -->
+    <section class="cards-container container" aria-live="polite">
+      <!-- Each card has a data-category attribute for filtering -->
+      <article class="card" data-category="saas">
+        <div class="card-media">
+          <img src="./asset/Images/Saas.avif" alt="Gradient image 1">
+        </div>
+        <div class="card-body">
+          <h3>SaaS Co: +300% Organic Traffic</h3>
+          <p class="client">Client: TechSolutions Inc.</p>
+          <ul class="kpis">
+            <li>+300% Traffic</li>
+            <li>+75% Conversions</li>
+          </ul>
+          <a class="view-link" href="#" aria-label="View SaaS case study">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="ecom">
+        <div class="card-media">
+          <img src="./asset/Images/E-commerce Brand.webp" alt="Gradient image 2">
+        </div>
+        <div class="card-body">
+          <h3>E-commerce Brand: +150% ROI on Ads</h3>
+          <p class="client">Client: Urban Apparel</p>
+          <ul class="kpis">
+            <li>+150% ROI</li>
+            <li>+200% Sales</li>
+          </ul>
+          <a class="view-link" href="#">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="health">
+        <div class="card-media">
+          <img src="./asset/Images/Health care provider.avif" alt="Gradient image 3">
+        </div>
+        <div class="card-body">
+          <h3>Healthcare Provider: 5x Lead Generation</h3>
+          <p class="client">Client: Wellness Clinic Group</p>
+          <ul class="kpis">
+            <li>5x Leads</li>
+            <li>−40% Cost/Lead</li>
+          </ul>
+          <a class="view-link" href="#">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="ppc">
+        <div class="card-media">
+          <img src="./asset/Images/Fintech Startup.avif" alt="Gradient image 4">
+        </div>
+        <div class="card-body">
+          <h3>Fintech Startup: 200% User Acquisition</h3>
+          <p class="client">Client: FinSecure</p>
+          <ul class="kpis">
+            <li>+200% Users</li>
+            <li>Top 5 App Store</li>
+          </ul>
+          <a class="view-link" href="#">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="seo">
+        <div class="card-media">
+          <img src="./asset/Images/Local Business.avif" alt="Gradient image 5">
+        </div>
+        <div class="card-body">
+          <h3>Local Business: Top 3 Google Ranking</h3>
+          <p class="client">Client: Downtown Eatery</p>
+          <ul class="kpis">
+            <li>Top 3 Ranking</li>
+            <li>+90% Local Traffic</li>
+          </ul>
+          <a class="view-link" href="#">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="card" data-category="saas">
+        <div class="card-media">
+          <img src="./asset/Images/B2B Service.avif" alt="Gradient image 6">
+        </div>
+        <div class="card-body">
+          <h3>B2B Service: 75% Increase in Conversions</h3>
+          <p class="client">Client: Corporate Consultants</p>
+          <ul class="kpis">
+            <li>+75% Conversions</li>
+            <li>+60% Qualified Leads</li>
+          </ul>
+          <a class="view-link" href="#">View Case Study →</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- TRUST / TESTIMONIALS — simplified -->
+    <section class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial active">
+                <img src="./asset/Images/what client say 6.jpg" alt="">
+                <p>“The agency completely transformed our online presence. Our traffic, our brand, and sales have all
+                    exploded!”</p>
+                <h4>Sarah Johnson</h4>
+                <span>CEO of Inspire Inc.</span>
+            </div>
+
+            <div class="testimonial">
+                <img src="./asset/Images/what client says 4.avif" alt="">
+                <p>“Their data-driven approach and creativity delivered results beyond our expectations. Highly
+                    recommended!”</p>
+                <h4>Mark Chen</h4>
+                <span>Marketing Director, Bright Tech</span>
+            </div>
+
+            <div class="testimonial">
+                <img src="./asset/Images/what client says 5.webp" alt="">
+                <p>“Working with them was a game-changer. I saw a drastic improvement in brand visibility.”</p>
+                <h4>Emily Rodriguez</h4>
+                <span>Founder, Vision Co.</span>
+            </div>
+
+            <!-- Arrow Buttons -->
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Schedule a free, no-obligation consultation with our experts today.</p>
+        <button class="btn-primary2 open-modal-btn">Schedule Your Free Consultation</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL (Calendly) -->
+  <div class="modal" id="consultModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" tabindex="-1"></div>
+
+    <div class="modal-content" role="document" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close dialog">&times;</button>
+
+      <h3 id="modalTitle">Schedule Your Consultation</h3>
+      <p class="muted">Select a convenient date and time — booking powered by Calendly.</p>
+
+      <!-- Calendly inline widget (replace the URL below with your real Calendly link) -->
+      <div class="calendly-wrap">
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/wasdot123/30min"
+             style="min-width:200px;height:340px;">
+        </div>
+      </div>
+
+      <!-- Calendly widget script (keeps it async) -->
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./pscrpt.js"></script>
+</body>
+</html>

@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
     font-family: "Roboto", sans-serif;
@@ -257,8 +256,10 @@ header {
 
 /* Services */
 .services {
-    padding: 80px 30px;
+    padding: 80px 30px 30px;
     text-align: center;
+    
+    
 }
 
 .services h2 {
@@ -292,7 +293,7 @@ header {
 
 /* Our Work */
 .our-work {
-    padding: 80px 30px;
+    padding: 30px 30px 80px;
     text-align: center;
 
 }
@@ -341,7 +342,7 @@ header {
     width: 100%;
     max-width: 900px;
     margin: auto;
-    padding: 60px 10px;
+    padding: 30px 10p;
     text-align: center;
     background: #fff;
 }
@@ -586,49 +587,7 @@ header {
     transform: translateY(-3px);
 }
 
-/* ===== FOOTER ===== */
-.footer {
-    display: flex;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    padding: 50px 10px;
-    background: #fafafa;
-    color: #333;
-    gap: 30px;
-    text-align: center;
-    /* Default on small screens */
-}
 
-/* .footer div {
-    min-width: 200px;
-}
-
-.footer h3,
-.footer h4 {
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer li,
-.footer a {
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #1067fa;
-} */
 
 /* ===== POPUP ===== */
 .popup {
@@ -723,19 +682,9 @@ header {
     .cta h2 {
         font-size: 22px;
     }
-
-    /* .footer {
-        text-align: left;
-    } */
 }
 
-/* Footer */
-/* Base footer styling */
-.footer {
-  background: #f7f8fa;        /* subtle, clean background */
-  color: #333;
-  border-top: 1px solid #e5e5e5;
-}
+
 
 .footer .container {
   max-width: 1100px;          /* keeps content within a nice width */
@@ -746,35 +695,9 @@ header {
   grid-template-columns: 1.5fr 1fr 1fr;  /* left wider, links/contact equal */
   gap: 24px;
   align-items: start;
-}
+} */
 
-/* Headings and lists */
-.footer h3,
-.footer h4 {
-  font-weight: 600;
-  margin: 0 0 10px;
-}
 
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-.footer li {
-  font-size: 14px;
-  margin: 6px 0;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.2s ease;
-}
-.footer a:hover {
-  color: #1067fa;
-}
 
 /* Optional: logo style refinement */
 .footer .logo {
@@ -791,10 +714,80 @@ header {
   font-size: 14px;
 }
 
-/* Ensure minimum column width for readability */
+.footer {
+  background: #f7f8fa;
+  color: #333;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+.footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr; /* left wider */
+  gap: 24px;
+  align-items: start;
+}
+
+.footer h3.logo {
+  color: #1067fa;
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+
+.footer h4 {
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin: 6px 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #1067fa;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 16px 20px;
+  background: #f1f1f1;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Ensure minimum column width (fixes entity issue: use '>' not '&gt;') */
 .footer .container > div {
   min-width: 220px;
 }
+
+/* Responsive */
+@media (max-width: 500px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+}
+
 
 /* Mobile / small screens */
 @media (max-width: 768px) {
@@ -810,13 +803,6 @@ header {
     margin-bottom: 10px;        /* gentle spacing between blocks */
   }
 }
-
-
-/* footer {
-    text-align: center;
-    padding: 20px;
-    background: #f1f1f1;
-} */
 
 
 /* Responsive */
@@ -878,27 +864,6 @@ header {
     }
 }
 
-
-/* @media (max-width: 500px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-left,
-    .footer-links,
-    .footer-contact {
-        margin-bottom: 20px;
-    }
-
-    .footer-links ul,
-    .footer-contact ul {
-        padding: 0;
-        list-style: none;
-    }
-} */
 
 
 @media (max-width: 480px) {
