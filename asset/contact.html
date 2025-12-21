@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalSphere</title>
+  <script src="https://kit.fontawesome.com/f622ba580f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="logo">
+          <h3>DigitalSphere</h3>
+        </div>
+        <button>Get a Quote</button>
+      </div>
+    </div>
+  </header>
+  <section class="first-section">
+    <div class="first-section-container">
+      <h1>Let's Build Your Marketing Strategy</h1>
+      <p>Fill out the form below, or choose another way to connect. We'll get back to you within 24 hours</p>
+    </div>
+  </section>
+  <section class="second-section">
+    <div class="second-section-container">
+      <div class="section-info">
+        <h3>Get a Custom Proposal</h3>
+        <div class="custom">
+          <h5>Step 1 of 3:Your info</h5>
+          <p>30%</p>
+        </div>
+        <div class="progress">
+          <progress id="file" max="100" value="30" class="w-full h-2"></progress>
+        </div>
+        <form action="" class="Contact-form">
+          <div class="form-sections">
+            <div class="form-section">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter your name" id="full-name">
+              <small class="error"></small>
+            </div>
+            <div class="form-section">
+              <label for="name">Company Name</label>
+              <input type="text" placeholder="Enter your Company name" id="company-name">
+              <small class="error"></small>
+            </div>
+          </div>
+          <div class="form-sections">
+            <div class="form-section">
+              <label for="name">Work Email</label>
+              <input type="text" placeholder="you@Company.com" id="email">
+              <small class="error"></small>
+            </div>
+            <div class="form-section">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" placeholder="(123) 456-7890" id="phone-number">
+              <small class="error"></small>
+            </div>
+          </div>
+          <div class="read-policy">
+            <P class="submit-policy"> <input type="checkbox"> By submitting this form, you agree to our <a
+                id="linkPolicy">Privacy policy</a></P>
+          </div>
+          <div>
+            <button class="submit-button" type="submit" onclick="saveInput()">Submit</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="third-section">
+        <div class="third-section-meeting">
+          <h4> Other Ways to Reach Us</h4>
+          <div class="third-section-call">
+            <a href=""> <i class="fa-solid fa-phone"></i> </a>
+            <div class="third-section-call-info">
+              <p>Phone</p>
+              <span>(123) 456-7890</span>
+            </div>
+          </div>
+          <div class="third-section-call">
+            <a href=""><i class="fa-solid fa-envelope"></i> </a>
+            <div class="third-section-call-info">
+              <p>Email</p>
+              <span>bello@dmp.com</span>
+            </div>
+          </div>
+          <div class="third-section-call">
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            <div class="third-section-call-info">
+              <p>Office</p>
+              <span>123 Market St,Suite 456</span>
+              <span>Sans Francisco, CA 94103</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calender-section">
+        <div class="calender-section-meeting">
+          <div class="calender-section-meeting-info">
+            <i class="fa-solid fa-calendar"></i>
+            <p>Schedule a Free Consultation</p>
+            <h6>Find a time that works for you and lets discuss how we can help your bussiness grow</h6>
+            <div class="calender-section-button">
+              <button class="book-meeting">Book a Call</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu">
+    <ul class="nav-link">
+      <li><a href="">Home</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="circle-menu">
+      <div class="circle-icon" id="menu-links">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </section>
+
+
+
+  <main>
+    <section class="faq-wrap">
+      <div class="Container">
+        <h3 class="faq-heading">Frequently Asked Questions</h3>
+
+        <div class="faq-list">
+
+          <div class="faq-item open">
+            <button class="faq-q" type="button">
+              <span>What is your process for a new project?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                Our process begins with a discovery call to understand your goals.
+                From there, we move to strategy development, execution, and finally,
+                ongoing analysis and optimization. We believe in transparent communication
+                every step of the way.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span>How long does it take to get a proposal?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                We typically deliver proposals within 3–5 business days after the initial
+                discovery call.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span>What kind of results can I expect?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                You can expect measurable improvements in traffic, engagement,
+                and conversions within the first few months, depending on your
+                goals and starting point.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="" alt="brand" class="footer-logo" />
+        <span class="brand-name">Digital Marketing Pro</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2024 Digital Marketing Pro. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="contact.js"></script>
+</body>
+
+</html>
