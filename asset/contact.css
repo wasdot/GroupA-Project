@@ -703,7 +703,7 @@ small.error{
   display: block;
    position: fixed;
   top: 55vh;
-  left: 20px;
+  right: 20px;
   z-index: 999;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
